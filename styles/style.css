@@ -176,6 +176,21 @@ nav a {
   font-size: 1rem;
   font-weight: 500;
 }
+.play-btn {
+  border-radius: 8px;
+  position: relative;
+  bottom: 190px;
+  left: 110px;
+}
+.play-btn:hover{
+    border-radius: 16px;
+    background: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.6) 0%,
+        rgba(0, 0, 0, 0.6) 100%
+      ),
+      url("../images/Rectangle\ 7.png"), rgb(145, 141, 141) 50% / cover no-repeat;
+}
 /* play-instantly styles */
 .play-instantly {
   height: 700px;
@@ -401,13 +416,13 @@ nav a {
   }
   .hover-group {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2px;
     margin-top: 300px;
-    margin-left: 5px;
+    margin-left: 2px;
     margin-bottom: 10px;
   }
-  .footer{
+  .footer {
     margin-top: 200px;
     width: auto;
     height: 500px;
