@@ -310,7 +310,6 @@ nav a {
 }
 /* Careers style */
 .careers {
-  width: 100%;
   height: 400px;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -319,7 +318,7 @@ nav a {
   padding-left: 50px;
 }
 .careers-info-container {
-  margin-left: 50px;
+  margin-left: 20px;
 }
 .careers-info-title {
   color: #fff;
@@ -385,7 +384,7 @@ nav a {
   border-radius: 40px;
   background: #fff;
   border: none;
-  padding-right: 20px;
+  padding-right: 0px;
   margin-top: 20px;
 }
 .btn-hover-group:hover {
@@ -471,13 +470,13 @@ nav a {
 /* responsive style mobile devices */
 @media screen and (max-width: 576px) {
   .header {
-    width: auto;
+    width: 100dvw;
     height: 270px;
   }
   nav,
   nav > ul {
     flex-direction: column;
-    padding-left: 100px;
+    padding-left: 20px;
   }
   nav > ul,
   nav > a {
@@ -488,65 +487,158 @@ nav a {
   }
   .goat,
   .online-games-card,
+  .we-are-gamer,
   .play-instantly,
-  .play-games,
-  .we-are-gamer {
+  .play-games {
+    width: 100dvw;
     display: grid;
     grid-template-columns: 1fr;
-    margin: 0px 10px;
+    margin: 0px 0px;
     align-items: center;
+  }
+  .up-title {
+    font-size: 1.5rem;
+  }
+  .main-title {
+    font-size: 3rem;
+  }
+  .for-btn {
+    display: inline-flex;
+    gap: 10px;
+    margin-left: 10px;
+    padding-top: 20px;
+  }
+  .btn-primary {
+    font-size: 1.2rem;
+    padding: 10px 30px;
+  }
+  .btn-secondary {
+    font-size: 1.2rem;
+    padding: 10px 30px;
   }
   .we-are-gamer-info{
     margin-right: 20px;
+    text-align: left;
   }
   .online-games {
-    margin-top: 500px;
+    margin-top: 450px;
   }
   .online-games-info {
-    text-align: center;
-    margin-left: 100px;
+    text-align: left;
+    margin-left: 0px;
   }
   .online-games-card {
-    margin-left: 100px;
+    margin-left: 20px;
     padding-top: 10px;
   }
   .play-instantly {
-    margin-top: 1100px;
+    margin-top: 1000px;
   }
   .play-games {
+    visibility: hidden;
     margin-top: 300px;
   }
-  .play-games-img {
-    padding-right: 5px;
-  }
-  .play-games-info {
-    padding-left: 100px;
+  /* .play-games-img {
+    padding-right: 20px;
+  } */
+  /* .play-games-info {
+    padding-left: 10px;
     padding-top: 0px;
-  }
+  } */
   .careers {
-    width: 100dvh;
-    margin-top: 300px;
+    width: 100dvw;
+    margin-top: -900px;
     display: grid;
     grid-template-columns: 1fr;
     gap: 20px;
     height: 950px;
     margin-right: 0px;
+    padding-left: 10px;
+  }
+  .careers-info-middle{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .careers-info-right{
+    text-align: start;
   }
   .hover-group {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2px;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0px;
     margin-top: 100px;
-    margin-left: 2px;
+    margin-left: 5px;
+    margin-right: 5px;
     margin-bottom: 10px;
   }
+  .btn-hover-group {
+    height: 60px;
+    width: 180px;
+  }
+  .goat-img-container img{
+    max-width: 80%;
+    height: auto;
+  }
+  .goat-info-container {
+    background-image: none;
+  }
+  .we-are-gamer-img img{
+    margin-top: 250px;
+    max-width: 70%;
+    height: auto;
+  }
+  .card img{
+    max-width: 100%;
+    height: auto;
+  }
+  .play-instantly-img img{
+    max-width: 50%;
+    height: auto;
+    padding-left: 40px;
+    
+  }
+  .play-instantly-large-img {
+    padding-left: 10px;
+  }
+  .play-instantly-small-img {
+    height: 100px;
+    width: 60px;
+    border-radius: 8px;
+    position: relative;
+    bottom: 160px;
+    visibility: hidden;
+  }
+  .play-games-img{
+    /* max-width: 60%;
+    height: auto; */
+    visibility: hidden;
+  }
+  .careers-img img{
+    max-width: 100%;
+    height: auto;
+  }
   .footer {
-    width: 100%;
-    margin-top: 200px;
+    width: 100dvw;
+    margin-top: 500px;
     width: auto;
-    height: 500px;
-    display: flex;
-    flex-direction: column;
+    height: 900px;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .footer-upper-text{
+    display: grid;
+    grid-template-columns: repeat(2, 30px);
+    gap: 50px;
+  }
+  .footer-social-icon{
+    display: grid;
+    grid-template-columns: repeat(3, 40px);
+    gap: 20px;
+  }
+  .footer-lower-text{
+    display: grid;
+    grid-template-columns: repeat(2, 30px);
+    gap: 50px;
   }
 }
 
